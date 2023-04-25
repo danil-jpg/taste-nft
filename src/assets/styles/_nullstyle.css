@@ -26,7 +26,13 @@ figcaption,
 blockquote,
 dl,
 dd {
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: "Raleway";
+  font-weight: 600;
   margin: 0;
+  font-size: 14px;
+  color: #fff;
 }
 
 /* Выставляем основные настройки по-умолчанию для body */
@@ -65,6 +71,9 @@ button,
 textarea,
 select {
   font: inherit;
+}
+button {
+  cursor: pointer;
 }
 
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */

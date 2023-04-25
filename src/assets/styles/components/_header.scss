@@ -1,0 +1,227 @@
+.header {
+  max-width: 1366px;
+  width: 100%;
+  background: #30363d;
+  box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.05);
+  border-radius: 0px 0px 32px 32px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  height: 56px;
+}
+
+.logo {
+  width: 38px;
+  height: 36px;
+  position: relative;
+  margin-top: 28px;
+  margin-left: 29px;
+  flex-basis: 38px;
+  flex-shrink: 0;
+  margin-top: 10px;
+}
+
+.icon-search {
+  width: 15px;
+  height: 15px;
+}
+
+.header__btn {
+  font-size: 12px;
+  line-height: 14px;
+  padding: 9px 19px;
+  max-height: 32px;
+  align-self: center;
+  min-width: 126px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  margin-left: 18px;
+  margin-top: 0px;
+}
+.common-btn {
+  background: linear-gradient(270deg, #8743ff 0%, #4136f1 100%);
+  box-shadow: 0px 15px 30px rgba(20, 102, 204, 0.16);
+  border-radius: 12px;
+  color: #ffffff;
+  border: none;
+}
+.header__input-wr {
+  max-width: 1104px;
+  width: 100%;
+  height: 32px;
+  background: #1d2228;
+  border-radius: 12px;
+  position: relative;
+  margin-top: 12px;
+  margin-left: 27px;
+}
+.icon-search {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 14.5px;
+  top: 8.5px;
+  fill: white;
+  cursor: pointer;
+}
+.header__input {
+  margin-left: 40px;
+  background: none;
+  border: none;
+  width: 96%;
+  height: 100%;
+  border-radius: 12px;
+  padding-left: 0px;
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.header__logedIn-wr {
+  display: grid;
+  width: 663px;
+  grid-template-columns: 33% 1fr;
+}
+
+.header__btn-add-art {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  max-width: 117px;
+  max-height: 32px;
+
+  margin-top: 13px;
+  margin-left: 15px;
+}
+
+.header__user-wr {
+  background: #30363d;
+  box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  width: 100%;
+  display: grid;
+  position: relative;
+  max-width: 100%;
+  grid-template-columns: 24% 1fr;
+  max-height: 56px;
+  &.active {
+    max-height: 200px;
+    .header__user-more-wr {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+}
+
+.header__user-_avatar {
+  position: relative;
+  top: 2px;
+  left: -2px;
+}
+
+.header__user-info-wr {
+  transform: translate(-6px);
+  margin-top: 11px;
+}
+
+.header__user-info_name {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+}
+
+.header__user-info_sub-wr {
+  display: flex;
+  margin-top: 2px;
+}
+.header__user-info_sub_name {
+  background: linear-gradient(270deg, #8743ff 0%, #d8c2ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-size: 12px;
+  line-height: 14px;
+}
+.header__user-info_sub_bal-wr {
+  display: flex;
+  margin-left: 10px;
+  font-style: normal;
+  font-weight: 600;
+}
+.header__user-info_sub_bal-text {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+}
+.tongue {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+  border-radius: 17px;
+}
+
+.header__user-info_sub_bal-num {
+  font-size: 12px;
+  line-height: 14px;
+  margin-left: 3px;
+}
+
+.header__logedIn_show-more-btn {
+  border: none;
+  background: none;
+  position: absolute;
+  right: 18px;
+  top: 17px;
+  cursor: pointer;
+}
+
+.showMore {
+  width: 12px;
+  height: 7px;
+  transition: 0.3s;
+  &.active {
+    transform: rotate(180deg);
+  }
+}
+
+.header__user-more-wr {
+  grid-column: 1/3;
+  padding: 0px 17px;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  &.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+.header__user-more_hash {
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 7px;
+}
+
+.header__user-more_link {
+  line-height: 18px;
+  margin-bottom: 7px;
+}
+.header_user-more_link_exit {
+  color: #ff5e54;
+}
+// <div className="header__user-more-wr">
+// <ul>
+//   <p className="header__user-more_hash">Address: 0c0xcx1cx606g4516x51g1...</p>
+//   <li className="header__user-more_link"></li>
+//   <li className="header__user-more_link"></li>
+//   <li className="header__user-more_link header_user-more_link_exit"></li>
+// </ul>
+// </div>

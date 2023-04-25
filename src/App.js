@@ -1,5 +1,5 @@
+import "./assets/styles/main.scss";
 import Header from "./components/Header";
-import nullStyle from "./assets/styles/_nullstyle.css";
 
 function App() {
   return (
