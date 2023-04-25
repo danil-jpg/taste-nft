@@ -1,0 +1,84 @@
+.authorPr {
+  margin-top: 56px;
+  height: 548px;
+
+  .header__user-info_sub_bal-text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .header__user-info_sub_bal-num {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+.authorPr__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #ffffff;
+}
+
+.authorPr__descr {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  width: 505px;
+  line-height: 18px;
+  /* or 129% */
+  span {
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+.authorPr__icon {
+  background: none;
+  width: 40px;
+  height: 40px;
+  left: 404px;
+  top: 575px;
+
+  mix-blend-mode: normal;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+}
+.externalLink {
+  width: 16px;
+  height: 16px;
+}
+.shareIcon {
+  width: 16px;
+  height: 16px;
+}
+.etcIcon {
+  width: 16px;
+  height: 16px;
+}
+.authorPr__btn {
+  min-width: 97px;
+  min-height: 40px;
+}
+// <div className="authorPr container">
+// <ProfileComp></ProfileComp>
+// <p className="authorPr__title">WFH - art name</p>
+// <p className="authorPr__descr">
+//   <span>Description:</span>
+//   The iconic meme that became a viral Internet sensation and an indispensable part of the gachimuchi music genre. This was taken when I was very young and in my full "performance" attire. That part of me now "lives" on platforms like Twitch, YouTube, and Bilibili (B 站).
+// </p>
+// <div className="authorPr__etc-wr">
+//   <div className="header__user-info_sub_bal-wr ">
+// 	<p className="header__user-info_sub_bal-text">Sold for:</p>
+// 	<Icon id={"tongue"} className="tongue"></Icon>
+// 	<p className="header__user-info_sub_bal-num">1,5M</p>
+//   </div>
+//   <button className="authorPr__btn common-btn">View</button>
+//   <button className="authorPr__icon">
+// 	<Icon id="externalLink" className="externalLink"></Icon>
+//   </button>
+//   <button className="authorPr__icon">
+// 	<Icon id="shareIcon" className="shareIcon"></Icon>
+//   </button>
+//   <button className="authorPr__icon">
+// 	<Icon id="etcIcon" className="etcIcon"></Icon>
+//   </button>
+// </div>
+// </div>

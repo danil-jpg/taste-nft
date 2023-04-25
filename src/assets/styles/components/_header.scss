@@ -10,6 +10,7 @@
   transform: translateX(-50%);
   display: flex;
   height: 56px;
+  z-index: 999;
 }
 
 .logo {
@@ -216,6 +217,9 @@
 }
 .header_user-more_link_exit {
   color: #ff5e54;
+}
+.header__user-avatar-wr {
+  display: flex;
 }
 // <div className="header__user-more-wr">
 // <ul>

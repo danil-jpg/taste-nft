@@ -1,8 +1,11 @@
 @import "./_nullstyle.css";
 @import "./components/header.scss";
+@import "./pages/authorPr.scss";
 
 .container {
   max-width: 1316px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body {
