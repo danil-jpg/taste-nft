@@ -30,6 +30,7 @@ const AutorPreview = () => {
           </button>
         </div>
       </div>
+      <div className="authorPr__slider"></div>
     </div>
   );
 };

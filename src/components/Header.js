@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import header from "../assets/styles/components/_header.scss";
 import sprites from "../assets/sprites.svg";
 import { IconRenderer as Icon } from "./utils/IconRenderer.js";
 

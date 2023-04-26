@@ -1,0 +1,30 @@
+@import "./_nullstyle.css";
+@import "./components/header.scss";
+@import "./components/header.scss";
+@import "./pages/authorPr.scss";
+@import "./components/profileComp.scss";
+@import "./components/selects.scss";
+@import "./pages/mainPage.scss";
+@import "./components/card.scss";
+.container {
+  max-width: 1316px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rainbow-text {
+  background: linear-gradient(270deg, #8743ff 0%, #4136f1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+body {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: #1d2228;
+  color: #ffffff;
+}

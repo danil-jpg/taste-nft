@@ -1,6 +1,8 @@
 .authorPr {
   margin-top: 56px;
   height: 548px;
+  display: grid;
+  grid-template-columns: 40% 1fr;
 
   .header__user-info_sub_bal-text {
     font-size: 14px;
@@ -16,15 +18,21 @@
   font-weight: 700;
   font-size: 32px;
   line-height: 38px;
+  margin-top: 21px;
+
   color: #ffffff;
 }
-
+.authorPrDescr {
+  padding-top: 310px;
+}
 .authorPr__descr {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   width: 505px;
   line-height: 18px;
+  margin-top: 13px;
+
   /* or 129% */
   span {
     color: rgba(255, 255, 255, 0.5);
@@ -34,12 +42,14 @@
   background: none;
   width: 40px;
   height: 40px;
-  left: 404px;
-  top: 575px;
-
+  transition: 0.3s;
   mix-blend-mode: normal;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
+
+  &:hover {
+    transform: rotate(15deg);
+  }
 }
 .externalLink {
   width: 16px;
@@ -57,6 +67,29 @@
   min-width: 97px;
   min-height: 40px;
 }
+.authorPr__etc-wr {
+  display: flex;
+  align-items: end;
+  height: 59px;
+
+  .header__user-info_sub_bal-wr {
+    margin-left: 0;
+    transform: translate(0, -13px);
+    .tongue {
+      margin-left: 15px;
+    }
+  }
+}
+
+.authorPr__btn {
+  margin-left: 147px;
+  margin-right: 12px;
+}
+
+.authorPr__icon {
+  margin-right: 8px;
+}
+
 // <div className="authorPr container">
 // <ProfileComp></ProfileComp>
 // <p className="authorPr__title">WFH - art name</p>
