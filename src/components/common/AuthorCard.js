@@ -1,8 +1,8 @@
 import React from "react";
 import { IconRenderer as Icon } from "../utils/IconRenderer";
+import Timer from "../Timer";
 
 const AuthorCard = (props) => {
-  console.log(`${props.obj.titleImg}`);
   return (
     <div className="card">
       <div className="card__img-wr">
@@ -20,11 +20,7 @@ const AuthorCard = (props) => {
           </div>
           <div className="card__sub-descr-bottom">
             <p className="card__sub-descr-bottom_text card__sub-descr_text">Ending in:</p>
-            <div className="card__sub-descr-bottom_timer-wr">
-              <p className="card_hours">05h</p>
-              <p className="card__mins">02m</p>
-              <p className="card__secs">41s</p>
-            </div>
+            <Timer date={props.obj.date}></Timer>
           </div>
         </div>
       </div>
