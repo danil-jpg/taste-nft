@@ -1,6 +1,6 @@
 import React from "react";
-import { IconRenderer as Icon } from "../utils/IconRenderer";
-import Timer from "../Timer";
+import { IconRenderer as Icon } from "./utils/IconRenderer";
+import Timer from "./Timer";
 
 const AuthorCard = (props) => {
   return (

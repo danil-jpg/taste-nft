@@ -1,4 +1,4 @@
-import AuthorCard from "./common/AuthorCard";
+import AuthorCard from "./AuthorCard";
 
 import cardImg1 from "../assets/img/cards/card1.png";
 import cardImg2 from "../assets/img/cards/card2.png";

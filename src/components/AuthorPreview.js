@@ -1,6 +1,6 @@
 import React from "react";
-import { IconRenderer as Icon } from "../utils/IconRenderer";
-import ProfileComp from "../UI/ProfileComp";
+import { IconRenderer as Icon } from "./utils/IconRenderer";
+import ProfileComp from "./UI/ProfileComp";
 
 const AutorPreview = () => {
   return (
