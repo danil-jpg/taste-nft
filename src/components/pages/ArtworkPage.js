@@ -2,6 +2,7 @@ import React from "react";
 import { IconRenderer as Icon } from "./../utils/IconRenderer.js";
 import Timer from "../Timer.js";
 import ProfileComp from "../UI/ProfileComp.js";
+import AuthorCards from "../AuthorCards.js";
 
 const ArtworkPage = () => {
   return (
@@ -191,6 +192,10 @@ const ArtworkPage = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="art__authors container">
+        <p className="art__authors_title">Feature works</p>
+        <AuthorCards></AuthorCards>
       </div>
     </div>
   );
