@@ -1,12 +1,13 @@
 @import "./_nullstyle.css";
 @import "./components/header.scss";
 @import "./components/header.scss";
-@import "./pages/authorPr.scss";
+@import "./components/authorPr.scss";
 @import "./components/profileComp.scss";
 @import "./components/selects.scss";
 @import "./pages/mainPage.scss";
 @import "./components/card.scss";
-@import "./pages/authorSlider.scss";
+@import "./components/authorSlider.scss";
+@import "./pages/artWorkPage.scss";
 
 .container {
   max-width: 1316px;

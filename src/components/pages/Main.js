@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import "../../assets/styles/styles.scss";
-import Header from "../Header";
 import { register } from "swiper/element/bundle";
 import AuthorPreview from "../AuthorPreview";
 import Selects from "../UI/Selects";
@@ -37,12 +36,10 @@ const Main = () => {
   useEffect(() => {
     Object.assign(authorSwiper.current, params);
     authorSwiper.current.initialize();
-    console.log(authorSwiper);
   }, []);
 
   return (
     <div className="MainPage">
-      <Header></Header>
       <AuthorPreview></AuthorPreview>
       <div className="main-page__author-block container">
         <Selects style={{ width: "170px" }} className="select1" options={["WFH - art name1", "WFH - art name2", "WFH - art name3"]} defOpt="Recently added"></Selects>

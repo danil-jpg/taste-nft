@@ -1,8 +1,11 @@
 import React from "react";
 import { IconRenderer as Icon } from "./utils/IconRenderer";
 import ProfileComp from "./UI/ProfileComp";
+import { useNavigate } from "react-router";
 
 const AutorPreview = () => {
+  const navigation = useNavigate();
+
   return (
     <div className="authorPr container">
       <div className="authorPrDescr">
@@ -18,7 +21,9 @@ const AutorPreview = () => {
             <Icon id={"tongue"} className="tongue"></Icon>
             <p className="header__user-info_sub_bal-num">1,5M</p>
           </div>
-          <button className="authorPr__btn common-btn">View</button>
+          <button className="authorPr__btn common-btn" onClick={() => navigation("artwork")}>
+            View
+          </button>
           <button className="authorPr__icon">
             <Icon id="externalLink" className="externalLink"></Icon>
           </button>

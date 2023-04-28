@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import sprites from "../assets/sprites.svg";
 import { IconRenderer as Icon } from "./utils/IconRenderer.js";
+import { useNavigate } from "react-router";
 
 const Header = () => {
   const [input, setInput] = useState("");
   const [logedIn, setLogStatus] = useState(true);
   const [showMore, setShowMore] = useState(false);
+
+  // const navigation = useNavigate();
 
   const logedInFoo = () => {
     return (

@@ -1,0 +1,164 @@
+.artwork {
+  margin-top: 96px;
+}
+
+.artwork__img {
+  width: 100%;
+  min-height: 582px;
+}
+.artwork__descr-wr {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 518px;
+  height: 75px;
+  background: #30363d;
+  box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  z-index: 999;
+  top: -41px;
+  position: relative;
+}
+.artwork__descr_1 {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 3px;
+    height: 43px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+  }
+}
+.artwork__descr_2 {
+  position: relative;
+  padding-left: 19px;
+  .artwork__descr_text {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 3px;
+    height: 43px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+  }
+  .card__sub-descr-bottom_timer-wr {
+    margin-top: 4px;
+
+    p {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+}
+.artwork__descr_3 {
+  padding-top: 1px;
+  padding-left: 22px;
+}
+.artwork__descr_text {
+}
+.artwork-tongue {
+  margin-left: 0;
+  width: 19px;
+  height: 19px;
+}
+.artwork__descr_price {
+}
+.artwork__btn {
+  padding: 10px 32px;
+}
+.artwork__descr_1_sub-descr {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding-top: 3px;
+}
+.artwork__descr_price_num {
+  font-size: 16px;
+  line-height: 19px;
+  margin-left: 5px;
+}
+.artwork__descr_price {
+  margin-left: 5px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.art-descr {
+  display: grid;
+  grid-template-columns: 39.5% 1fr;
+  margin-top: -12px;
+}
+
+.art__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  margin-top: 22px;
+}
+
+.art__copy {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 11px;
+  width: 83px;
+  .art__copy_text {
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.art__descr-wr {
+  margin-top: 8px;
+  margin-bottom: 15px;
+
+  span {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  /* display: flex; */
+}
+.authorPr__icon-wr.art {
+  display: flex;
+
+  .authorPr__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+// <p className="art__title">WFH - art name</p>
+//           <div className="art__copy">
+//             <p className="art__copy_text">Сopy: </p>
+//             <p className="art__copy_num">2 of 10</p>
+//           </div>
+//           <div className="art__descr-wr">
+//             <span className="art__descr_f-word">Description:</span>
+//             <p className="art__descr_text">
+//               The iconic meme that became a viral Internet sensation and an indispensable part of the gachimuchi music genre. This was taken when I was very young and in my full "performance" attire. That part of me now "lives" on platforms like Twitch, YouTube, and Bilibili (B 站). The iconic meme that became a viral Internet sensation and an indispensable part of the gachimuchi music genre. This
+//               was taken when I was very young and in my full "performance" attire. That part of me now "lives" on platforms like Twitch, YouTube, VK (ВКонта́кте), and Bilibili (B 站).
+//             </p>
+//           </div>
+//           <button className="authorPr__icon">
+//             <Icon id="externalLink" className="externalLink"></Icon>
+//           </button>
+//           <button className="authorPr__icon">
+//             <Icon id="shareIcon" className="shareIcon"></Icon>
+//           </button>
+//           <button className="authorPr__icon">
+//             <Icon id="etcIcon" className="etcIcon"></Icon>
+//           </button>
