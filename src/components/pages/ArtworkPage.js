@@ -53,6 +53,144 @@ const ArtworkPage = () => {
             </button>
           </div>
         </div>
+        <div>
+          <p className="art-descr__title">Activity</p>
+          <div className="art-descr__bids-wr">
+            <div className="art-descr__bid-wr">
+              <div className="art__bid-1">
+                <img src={require("../../assets/img/avatar-big.png")} className="art__bid_img" alt="logo" />
+                <dir className="art__etc-wr">
+                  <p className="art__etc_title">Bid placed by 0x6FC0...14A4</p>
+                  <p className="art__etc_etc">May 19, 2021 at 2:27pm</p>
+                </dir>
+              </div>
+              <div className="art__bid-2">
+                <div className="artwork__descr_1_sub-descr">
+                  <Icon id={"tongue"} className="tongue artwork-tongue"></Icon>
+                  <p className="artwork__descr_price_num">1.5M</p>
+                  <p className="artwork__descr_price">(1308.54$)</p>
+                </div>
+                <button className="common-btn art__bid_btn authorPr__icon">
+                  <Icon id="externalLink" className="externalLink"></Icon>
+                </button>
+              </div>
+            </div>
+            <div className="art-descr__bid-wr">
+              <div className="art__bid-1">
+                <img src={require("../../assets/img/avatar-big.png")} className="art__bid_img" alt="logo" />
+                <dir className="art__etc-wr">
+                  <p className="art__etc_title">Bid placed by 0x6FC0...14A4</p>
+                  <p className="art__etc_etc">May 19, 2021 at 2:27pm</p>
+                </dir>
+              </div>
+              <div className="art__bid-2">
+                <div className="artwork__descr_1_sub-descr">
+                  <Icon id={"tongue"} className="tongue artwork-tongue"></Icon>
+                  <p className="artwork__descr_price_num">1.5M</p>
+                  <p className="artwork__descr_price">(1308.54$)</p>
+                </div>
+                <button className="common-btn art__bid_btn authorPr__icon">
+                  <Icon id="externalLink" className="externalLink"></Icon>
+                </button>
+              </div>
+            </div>
+            <div className="art-descr__bid-wr">
+              <div className="art__bid-1">
+                <img src={require("../../assets/img/avatar-big.png")} className="art__bid_img" alt="logo" />
+                <dir className="art__etc-wr">
+                  <p className="art__etc_title">Bid placed by 0x6FC0...14A4</p>
+                  <p className="art__etc_etc">May 19, 2021 at 2:27pm</p>
+                </dir>
+              </div>
+              <div className="art__bid-2">
+                <div className="artwork__descr_1_sub-descr">
+                  <Icon id={"tongue"} className="tongue artwork-tongue"></Icon>
+                  <p className="artwork__descr_price_num">1.5M</p>
+                  <p className="artwork__descr_price">(1308.54$)</p>
+                </div>
+                <button className="common-btn art__bid_btn authorPr__icon">
+                  <Icon id="externalLink" className="externalLink"></Icon>
+                </button>
+              </div>
+            </div>
+            <div className="art-descr__bid-wr">
+              <div className="art__bid-1">
+                <img src={require("../../assets/img/avatar-big.png")} className="art__bid_img" alt="logo" />
+                <dir className="art__etc-wr">
+                  <p className="art__etc_title">Bid placed by 0x6FC0...14A4</p>
+                  <p className="art__etc_etc">May 19, 2021 at 2:27pm</p>
+                </dir>
+              </div>
+              <div className="art__bid-2">
+                <div className="artwork__descr_1_sub-descr">
+                  <Icon id={"tongue"} className="tongue artwork-tongue"></Icon>
+                  <p className="artwork__descr_price_num">1.5M</p>
+                  <p className="artwork__descr_price">(1308.54$)</p>
+                </div>
+                <button className="common-btn art__bid_btn authorPr__icon">
+                  <Icon id="externalLink" className="externalLink"></Icon>
+                </button>
+              </div>
+            </div>
+            <div className="art-descr__bid-wr">
+              <div className="art__bid-1">
+                <img src={require("../../assets/img/avatar-big.png")} className="art__bid_img" alt="logo" />
+                <dir className="art__etc-wr">
+                  <p className="art__etc_title">Bid placed by 0x6FC0...14A4</p>
+                  <p className="art__etc_etc">May 19, 2021 at 2:27pm</p>
+                </dir>
+              </div>
+              <div className="art__bid-2">
+                <div className="artwork__descr_1_sub-descr">
+                  <Icon id={"tongue"} className="tongue artwork-tongue"></Icon>
+                  <p className="artwork__descr_price_num">1.5M</p>
+                  <p className="artwork__descr_price">(1308.54$)</p>
+                </div>
+                <button className="common-btn art__bid_btn authorPr__icon">
+                  <Icon id="externalLink" className="externalLink"></Icon>
+                </button>
+              </div>
+            </div>
+            <div className="art-descr__bid-wr">
+              <div className="art__bid-1">
+                <img src={require("../../assets/img/avatar-big.png")} className="art__bid_img" alt="logo" />
+                <dir className="art__etc-wr">
+                  <p className="art__etc_title">Bid placed by 0x6FC0...14A4</p>
+                  <p className="art__etc_etc">May 19, 2021 at 2:27pm</p>
+                </dir>
+              </div>
+              <div className="art__bid-2">
+                <div className="artwork__descr_1_sub-descr">
+                  <Icon id={"tongue"} className="tongue artwork-tongue"></Icon>
+                  <p className="artwork__descr_price_num">1.5M</p>
+                  <p className="artwork__descr_price">(1308.54$)</p>
+                </div>
+                <button className="common-btn art__bid_btn authorPr__icon">
+                  <Icon id="externalLink" className="externalLink"></Icon>
+                </button>
+              </div>
+            </div>
+            <div className="art-descr__bid-wr">
+              <div className="art__bid-1">
+                <img src={require("../../assets/img/avatar-big.png")} className="art__bid_img" alt="logo" />
+                <dir className="art__etc-wr">
+                  <p className="art__etc_title">Bid placed by 0x6FC0...14A4</p>
+                  <p className="art__etc_etc">May 19, 2021 at 2:27pm</p>
+                </dir>
+              </div>
+              <div className="art__bid-2">
+                <div className="artwork__descr_1_sub-descr">
+                  <Icon id={"tongue"} className="tongue artwork-tongue"></Icon>
+                  <p className="artwork__descr_price_num">1.5M</p>
+                  <p className="artwork__descr_price">(1308.54$)</p>
+                </div>
+                <button className="common-btn art__bid_btn authorPr__icon">
+                  <Icon id="externalLink" className="externalLink"></Icon>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
