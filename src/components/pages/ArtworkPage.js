@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { IconRenderer as Icon } from "./../utils/IconRenderer.js";
 import Timer from "../Timer.js";
 import ProfileComp from "../UI/ProfileComp.js";
 import AuthorCards from "../AuthorCards.js";
+import ModalBid from "../UI/modals/ModalBid.js";
 
 const ArtworkPage = () => {
+  const [modal, setModal] = useState(false);
+
   return (
     <div className="artWorkPage">
       <div className="artwork concrete-slide container">
@@ -23,7 +26,9 @@ const ArtworkPage = () => {
             <Timer date={"May 22 2023"}></Timer>
           </div>
           <div className="artwork__descr_3">
-            <button className="common-btn artwork__btn">Place a bid</button>
+            <button className="common-btn artwork__btn" onClick={() => setModal(true)}>
+              Place a bid
+            </button>
           </div>
         </div>
       </div>
@@ -197,6 +202,7 @@ const ArtworkPage = () => {
         <p className="art__authors_title">Feature works</p>
         <AuthorCards></AuthorCards>
       </div>
+      <ModalBid modal={modal} setModal={setModal}></ModalBid>
     </div>
   );
 };

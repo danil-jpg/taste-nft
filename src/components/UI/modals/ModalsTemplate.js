@@ -1,8 +1,8 @@
 import React from "react";
-import { IconRenderer as Icon } from "../utils/IconRenderer";
+import { IconRenderer as Icon } from "../../utils/IconRenderer";
 
-const Modals = ({ children, titleBlock, className, visible, setVisible }) => {
-  const cssStyles = [className, "subStrate"];
+const ModalsTemplate = ({ children, titleBlock, className, visible, setVisible }) => {
+  const cssStyles = ["subStrate"];
 
   if (visible === true) {
     cssStyles.push("active");
@@ -10,7 +10,7 @@ const Modals = ({ children, titleBlock, className, visible, setVisible }) => {
 
   return (
     <div className={cssStyles.join(" ")} onClick={() => setVisible(false)}>
-      <div className="modal" onClick={(e) => e.stopPropagation()}>
+      <div className={`${className} modal`} onClick={(e) => e.stopPropagation()}>
         <div className="cross-wr">
           {titleBlock}
           <Icon id="cross" className="cross" onClick={(e) => setVisible(false)}></Icon>
@@ -21,4 +21,4 @@ const Modals = ({ children, titleBlock, className, visible, setVisible }) => {
   );
 };
 
-export default Modals;
+export default ModalsTemplate;

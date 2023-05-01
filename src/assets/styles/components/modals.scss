@@ -28,12 +28,13 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .cross {
   cursor: pointer;
   width: 16.96px;
   height: 16px;
+  right: 24px;
+  position: absolute;
 }
 
 .modal__title {
@@ -43,6 +44,16 @@
   text-align: center;
 }
 .bid {
+  margin-top: 24px;
+}
+
+.modal__bid {
+  max-width: 653px;
+  width: 100%;
+  min-height: 268px;
+  //   height: 100%;
+}
+.bid__input-wr {
 }
 
 .bid__min-sum {
@@ -58,32 +69,53 @@
   line-height: 19px;
   color: rgba(255, 255, 255, 0.5);
 }
+.bid__input-container {
+  margin-top: 8px;
+  width: 176px;
+  height: 40px;
+  position: relative;
+  &::after {
+    content: "TASTE";
+    position: absolute;
+    font-size: 16px;
+    line-height: 19px;
+    pointer-events: none;
+    right: 12px;
+    top: 12px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
 .bid__input {
   font-weight: 600;
   font-size: 16px;
   line-height: 19px;
   color: #ffffff;
-  width: 176px;
-  height: 40px;
-
+  width: 100%;
+  height: 100%;
   background: #1d2228;
   border-radius: 8px;
   border: none;
   position: relative;
-  &::after {
-    // content: "TASTE";
-    // position: absolute;
-    // right: 0;
-    // top: 12px;
-    // color: rgba(255, 255, 255, 0.5);
-  }
+  padding-left: 16px;
 }
 
-.bid__input::after {
-  content: "This is a fancy orange box.";
-  background-color: #ffba10;
-  border-color: black;
-  border-style: dotted;
+.modal__bid-title {
+  width: 100%;
+}
+.bid__center-wr {
+  display: flex;
+  align-items: baseline;
+}
+
+.bid__input-price {
+  margin-left: 9px;
+}
+
+.bid__btn {
+  width: 157px;
+  height: 40px;
+  margin: 32px auto 0;
+  display: block;
 }
 
 // <div className="bid">
