@@ -8,7 +8,7 @@ import CreatorPage from "./components/pages/CreatorPage";
 import ModalsTemplate from "./components/UI/modals/ModalsTemplate";
 
 function App() {
-  const [modal, setModal] = useState(true);
+  const [modal, setModal] = useState(false);
   const [walletState, setWalletState] = useState(1);
   const [logedIn, setLogStatus] = useState(false);
   const [status, setStatus] = useState("Initializing...");

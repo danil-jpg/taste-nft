@@ -1,0 +1,90 @@
+.creatorPage {
+}
+.creator-descr {
+}
+.creator-descr-top {
+  margin-top: 94px;
+  display: flex;
+  justify-content: space-between;
+  .profile__user-avatar-wr {
+    align-items: flex-start;
+  }
+}
+
+.creator-descr_right-wr {
+  flex-basis: 415px;
+  display: flex;
+  justify-content: flex-start;
+  padding-right: -5px;
+  padding-top: 6px;
+}
+
+.creator-descr_nums-wr {
+  margin-right: 15px;
+}
+
+.creator-descr_nums {
+  margin-right: 15px;
+}
+
+.creator-descr__btn {
+  width: 109px;
+  height: 40px;
+}
+
+.creator-descr__btns-wr {
+  margin-left: 11px;
+
+  .authorPr__icon:last-of-type {
+    margin-right: 0;
+  }
+}
+.creator-descr_foll {
+  color: rgba(255, 255, 255, 0.5);
+}
+.socials {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
+
+.creator-descr-bottom {
+  margin-top: 27px;
+}
+.creator__services-wr {
+  display: flex;
+}
+.creator__service-wr {
+  margin-right: 24px;
+  display: flex;
+}
+.creator-descr-wr {
+  margin-top: 13px;
+  width: 81%;
+}
+.creator-descr__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  span {
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+.creator-cards__tabs {
+  display: flex;
+  margin-top: 43px;
+  width: 177px;
+  justify-content: space-between;
+}
+.creator-cards__text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+.creator-cards__text_chosen {
+  color: rgba(255, 255, 255, 0.5);
+}
+// <div className="creator-cards__tabs">
+// <p className="creator-cards__text">Created</p>
+// <p className="creator-cards__text">Collected</p>
+// </div>
