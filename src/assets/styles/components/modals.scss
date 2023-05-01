@@ -1,0 +1,95 @@
+.subStrate {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  z-index: -1;
+  transition: 0.3s;
+  &.active {
+    opacity: 1;
+    z-index: 1000;
+  }
+}
+.modal {
+  background: #30363d;
+  box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.05);
+  border-radius: 32px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 40%;
+  padding: 45px 24px 0;
+  transition: 0.3s;
+}
+.cross-wr {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cross {
+  cursor: pointer;
+  width: 16.96px;
+  height: 16px;
+}
+
+.modal__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+.bid {
+}
+
+.bid__min-sum {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.bid__input-price {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.bid__input {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  width: 176px;
+  height: 40px;
+
+  background: #1d2228;
+  border-radius: 8px;
+  border: none;
+  position: relative;
+  &::after {
+    // content: "TASTE";
+    // position: absolute;
+    // right: 0;
+    // top: 12px;
+    // color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.bid__input::after {
+  content: "This is a fancy orange box.";
+  background-color: #ffba10;
+  border-color: black;
+  border-style: dotted;
+}
+
+// <div className="bid">
+//         <p className="bid__min-sum">Min.sum</p>
+//         <div className="bid__input-wr">
+//           <input type="text" placeholder="TASTE" />
+//           <p className="bid__input-price">(1308.54$)</p>
+//         </div>
+//       </div>

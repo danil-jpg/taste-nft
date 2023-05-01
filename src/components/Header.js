@@ -5,10 +5,10 @@ import { useNavigate } from "react-router";
 
 const Header = () => {
   const [input, setInput] = useState("");
-  const [logedIn, setLogStatus] = useState(true);
+  const [logedIn, setLogStatus] = useState(false);
   const [showMore, setShowMore] = useState(false);
 
-  // const navigation = useNavigate();
+  const navigation = useNavigate();
 
   const logedInFoo = () => {
     return (
@@ -47,7 +47,7 @@ const Header = () => {
 
   return (
     <div className="header">
-      <Icon id={"logo"} className="logo"></Icon>
+      <Icon id={"logo"} className="logo" onClick={() => navigation("")}></Icon>
       <div className="header__input-wr">
         <Icon id={"icon-search"} className="icon-search"></Icon>
         <input type="text" placeholder="Search for ..." className="header__input" value={input} onChange={(e) => setInput(e.target.value)} />
