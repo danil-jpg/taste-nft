@@ -1,13 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import sprites from "../assets/sprites.svg";
 import { IconRenderer as Icon } from "./utils/IconRenderer.js";
 import { useNavigate } from "react-router";
+import ModalsTemplate from "./UI/modals/ModalsTemplate";
 
-const Header = () => {
+const Header = ({ callback, logedIn }) => {
   const [input, setInput] = useState("");
-  const [logedIn, setLogStatus] = useState(false);
   const [showMore, setShowMore] = useState(false);
-
   const navigation = useNavigate();
 
   const logedInFoo = () => {
@@ -52,7 +51,13 @@ const Header = () => {
         <Icon id={"icon-search"} className="icon-search"></Icon>
         <input type="text" placeholder="Search for ..." className="header__input" value={input} onChange={(e) => setInput(e.target.value)} />
       </div>
-      {logedIn ? logedInFoo() : <button className="header__btn common-btn">Connect wallet</button>}
+      {logedIn ? (
+        logedInFoo()
+      ) : (
+        <button className="header__btn common-btn" onClick={() => callback(true)}>
+          Connect wallet
+        </button>
+      )}
     </div>
   );
 };

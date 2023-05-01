@@ -41,6 +41,7 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  width: 100%;
   text-align: center;
 }
 .bid {
@@ -117,11 +118,101 @@
   margin: 32px auto 0;
   display: block;
 }
+.wallet-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
 
-// <div className="bid">
-//         <p className="bid__min-sum">Min.sum</p>
-//         <div className="bid__input-wr">
-//           <input type="text" placeholder="TASTE" />
-//           <p className="bid__input-price">(1308.54$)</p>
-//         </div>
-//       </div>
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  gap: 57px;
+}
+.wallet-1__comp-wr {
+  position: relative;
+  z-index: 1;
+}
+.wallet-1__num-wr {
+  width: 40px;
+  z-index: 1;
+  height: 40px;
+  background: #ffffff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.wallet-1__num {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #1f2b38;
+}
+
+.wallet-1__img {
+  position: relative;
+  top: -11px;
+  left: 9px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  img {
+    align-self: center;
+  }
+}
+
+.wallet-1__img-descr {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+  width: 177px;
+}
+.wallet__btn {
+  width: 157px;
+  height: 40px;
+
+  margin: 0 auto;
+  display: block;
+  margin-top: 33px;
+  transform: translate(9px);
+  margin-bottom: 32px;
+}
+
+.wallet-2 {
+  width: 645px;
+}
+
+.wallet-2__img-wr {
+  background: linear-gradient(270deg, #8743ff 0%, #d8c2ff 100%);
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 24px auto;
+  img {
+    width: 46px;
+    height: 46px;
+    border-radius: 100%;
+  }
+}
+
+.wallet-2_text {
+  text-align: center;
+  margin-top: -14px;
+  margin-bottom: 33px;
+}
+// <div className="wallet-2">
+// <div className="wallet-2__img-wr">
+//   <img src="../assets/img/modals/fox.png" alt="fox" className="wallet-2__img" />
+// </div>
+// <p className="wallet-2_text">Initializing</p>
+// </div>
