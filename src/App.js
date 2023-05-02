@@ -76,7 +76,11 @@ function App() {
   return (
     <div id="app">
       <BrowserRouter>
-        <ModalsTemplate visible={modal} setVisible={setModal} titleBlock={<p className="modal__title modal__wallet-title">Connecting wallet</p>} className={"modal__wallet"}>
+        <ModalsTemplate
+          visible={modal}
+          setVisible={setModal}
+          titleBlock={<p className="modal__title modal__wallet-title">Connecting wallet</p>}
+          className={"modal__wallet"}>
           {Wallet()}
         </ModalsTemplate>
         <Header callback={setModal} logedIn={logedIn}></Header>

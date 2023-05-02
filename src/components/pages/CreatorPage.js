@@ -2,8 +2,83 @@ import React, { useState } from "react";
 import ProfileComp from "../UI/ProfileComp";
 import { IconRenderer as Icon } from "../utils/IconRenderer";
 import AuthorCards from "../AuthorCards";
+import ModalsTemplate from "../UI/modals/ModalsTemplate";
 
 const CreatorPage = () => {
+  const [followForm, setFollowForm] = useState(true);
+  const [btn, setBtn] = useState("Follow");
+  const FollowBody = () => {
+    return (
+      <div className="follow__items">
+        <div className="follow__item">
+          <ProfileComp></ProfileComp>
+          <button
+            className="common-btn follow__btn "
+            onClick={(e) => {
+              e.target.classList.toggle("active");
+              e.target.innerHTML = "Unfollow";
+            }}>
+            Follow
+          </button>
+        </div>
+        <div className="follow__item">
+          <ProfileComp></ProfileComp>
+          <button
+            className="common-btn follow__btn "
+            onClick={(e) => {
+              e.target.classList.toggle("active");
+              e.target.innerHTML = "Unfollow";
+            }}>
+            Follow
+          </button>
+        </div>
+        <div className="follow__item">
+          <ProfileComp></ProfileComp>
+          <button
+            className="common-btn follow__btn "
+            onClick={(e) => {
+              e.target.classList.toggle("active");
+              e.target.innerHTML = "Unfollow";
+            }}>
+            Follow
+          </button>
+        </div>
+        <div className="follow__item">
+          <ProfileComp></ProfileComp>
+          <button
+            className="common-btn follow__btn "
+            onClick={(e) => {
+              e.target.classList.toggle("active");
+              e.target.innerHTML = "Unfollow";
+            }}>
+            Follow
+          </button>
+        </div>
+        <div className="follow__item">
+          <ProfileComp></ProfileComp>
+          <button
+            className="common-btn follow__btn "
+            onClick={(e) => {
+              e.target.classList.toggle("active");
+              e.target.innerHTML = "Unfollow";
+            }}>
+            Follow
+          </button>
+        </div>
+        <div className="follow__item">
+          <ProfileComp></ProfileComp>
+          <button
+            className="common-btn follow__btn "
+            onClick={(e) => {
+              e.target.classList.toggle("active");
+              e.target.innerHTML = "Unfollow";
+            }}>
+            Follow
+          </button>
+        </div>
+      </div>
+    );
+  };
   return (
     <div className="creatorPage container">
       <div className="creator-descr ">
@@ -18,7 +93,13 @@ const CreatorPage = () => {
               <p className="creator-descr_num">15</p>
               <p className="creator-descr_foll">Following</p>
             </div>
-            <button className="common-btn creator-descr__btn">Follow</button>
+            <button
+              className="common-btn creator-descr__btn"
+              onClick={() => {
+                setFollowForm(true);
+              }}>
+              Follow
+            </button>
             <div className="authorPr__icon-wr art creator-descr__btns-wr">
               <button className="authorPr__icon">
                 <Icon id="externalLink" className="externalLink"></Icon>
@@ -71,6 +152,18 @@ const CreatorPage = () => {
         </div>
         <AuthorCards></AuthorCards>
       </div>
+      <ModalsTemplate
+        className={"follow"}
+        visible={followForm}
+        setVisible={setFollowForm}
+        titleBlock={
+          <div className="follow__tabs-wr">
+            <p className="follow__tab">Following</p>
+            <p className="follow__tab">Followers</p>
+          </div>
+        }>
+        <FollowBody></FollowBody>
+      </ModalsTemplate>
     </div>
   );
 };
