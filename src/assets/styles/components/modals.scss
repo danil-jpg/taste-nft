@@ -515,13 +515,109 @@
   display: block;
   margin: 32px auto;
 }
-// changeTime__title
-// <p className="changeTime__text">Selling will end</p>
-//         <div className="changeTime__body">
-//           <Input className={"changeTime__input"} placeholer={""}></Input>
-//           <Input className={"changeTime__input"} placeholer={""}></Input>
-//           <Timer date={"May 04 2023"}></Timer>
-//           <p className="changeTimer__del">x delete file</p>
-//         </div>
 
-//         <button className="common-btn changeTimer__btn">Change</button>
+.addArt__title {
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+
+  color: #ffffff;
+}
+.addArt {
+  top: 15%;
+  width: 653px;
+  min-height: 639px;
+}
+.art {
+}
+
+.art__head {
+  margin-top: 15px;
+}
+.arts__progress {
+  display: flex;
+  justify-content: center;
+}
+.art__progress {
+  width: 150px;
+  height: 5px;
+  margin-right: 6px;
+  background: linear-gradient(270deg, #8743ff 0%, #4136f1 100%);
+  border-radius: 12px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+.art__progress_text {
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 17px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.step1 {
+}
+.step__title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  margin-top: 20px;
+
+  color: rgba(255, 255, 255, 0.5);
+}
+.step__drop {
+  width: 599px;
+  height: 360px;
+  border: 1px dashed #c4c4c4;
+  border-radius: 16px;
+  margin-top: 13px;
+  box-sizing: border-box;
+}
+
+.step__btn {
+  margin: 32px auto;
+  width: 157px;
+  height: 40px;
+  display: block;
+}
+
+.step2 {
+}
+
+.step__edit {
+  margin-top: 11px;
+}
+.step__filters {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+  width: 118px;
+}
+.picture,
+.del,
+.drop {
+  width: 20px;
+  height: 20px;
+}
+
+// <div className="step2">
+//         <p className="step__title">
+//           Censor the public version of artwork, if it contains 18+ content
+//         </p>
+//         <div className="step__edit">
+//           <img src={require("./assets/img/modals/Rectangle 39322.png")} alt="img" />
+//         </div>
+//         <div className="step__filters">
+//           <IconRenderer id={"picture"} className={"picture"}></IconRenderer>
+//           <IconRenderer id={"del"} className={"del"}></IconRenderer>
+//           <IconRenderer id={"drop"} className={"drop"}></IconRenderer>
+//         </div>
+//         <button className="common-btn step__btn">Next step</button>
+//       </div>
