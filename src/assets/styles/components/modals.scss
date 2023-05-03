@@ -7,6 +7,7 @@
   background-color: rgba(0, 0, 0, 0.4);
   opacity: 0;
   z-index: -1;
+  overflow-y: auto;
   transition: 0.3s;
   &.active {
     opacity: 1;
@@ -283,13 +284,244 @@
     text-shadow: 0 0 1px #fff;
   }
 }
-// <div className="follow__tabs-wr">
-// <p className="follow__tab">Following</p>
-// <p className="follow__tab">Followers</p>
-// </div>
-// <div className="follow__items">
-//         <div className="follow__item">
-//           <ProfileComp></ProfileComp>
-//           <button className="common-btn follow__btn">Follow</button>
+
+.edit {
+  top: 1%;
+  width: 653px;
+  height: 937px;
+
+  input {
+    color: #fff;
+  }
+
+  &__title {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    width: 100%;
+  }
+  &__top-wr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 34px;
+    row-gap: 24px;
+  }
+  &__input-wr {
+  }
+  &__input_text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  &__input {
+    width: 294px;
+    height: 40px;
+    left: 381px;
+    top: 202px;
+    background: #1d2228;
+    border-radius: 8px;
+    border: none;
+    margin-top: 7px;
+  }
+  &__input-wr_right {
+    padding-left: 9px;
+  }
+  &__input_unique {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    span {
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      color: rgba(255, 255, 255, 0.5);
+      transform: translate(4px, 4px);
+      transform: translate(5px, 4px);
+    }
+
+    .edit__input {
+      width: 266px;
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+  &__input_descr {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  &__input_descr {
+  }
+  &__input-wr-descr {
+    padding: 23px 8px 0;
+  }
+  &__input-wr-big {
+    grid-column: 1/3;
+
+    input {
+      width: 100%;
+      height: 120px;
+    }
+  }
+  &__center-wr {
+    margin-top: 27px;
+  }
+  &__profile {
+    background: #1d2228;
+    box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    width: 294px;
+    height: 120px;
+    margin-top: 12px;
+  }
+  &__center-title {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    line-height: 19px;
+  }
+  &__bottom_title {
+    margin-top: 23px;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  //   <div className="edit__center-wr">
+  //   <p className="edit__center-title">Profile image</p>
+  //   <div className="edit__profile">
+  //     {/* <img src="" alt="" className="edit__profile_img" /> */}
+  //   </div>
+  // </div>
+  .creator__services-wr {
+    flex-direction: column;
+    margin-top: 6px;
+    justify-content: center;
+    margin-right: 0;
+
+    .edit__input {
+      width: 504px;
+      margin-left: 35px;
+      margin-top: 0;
+    }
+  }
+  .creator__service-wr {
+    align-items: center;
+    margin-right: 0;
+    margin-bottom: 3px;
+    display: grid;
+    grid-template-columns: 4% 7% 1fr;
+    margin-bottom: 9px;
+  }
+  .socials {
+    margin-right: 6px;
+  }
+  .creator__social-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 3px;
+  }
+
+  .edit__bottom_btn {
+    width: 157px;
+    height: 40px;
+    margin-top: 24px;
+    margin: 0 auto;
+    margin-top: 24px;
+    display: block;
+  }
+}
+
+.changeTime {
+  width: 653px;
+  height: 268px;
+}
+.changeTime__body {
+  padding-top: 8px;
+  display: flex;
+
+  .card__sub-descr-bottom_timer-wr {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    margin-left: 13px;
+    display: flex;
+    align-items: center;
+
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+.changeTime__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  margin: 0 auto;
+}
+.changeTime__text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 24px;
+}
+.changeTime__input {
+  background: #1d2228;
+  border-radius: 8px;
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 19px;
+  border: none;
+  color: #fff;
+}
+.changeTime__input_1 {
+  width: 127px;
+  height: 40px;
+  margin-right: 8px;
+}
+
+.changeTime__input_2 {
+  width: 75px;
+  height: 40px;
+}
+
+.changeTimer__del {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+  margin-left: 21px;
+  align-self: center;
+
+  color: #ff5e54;
+}
+
+.changeTimer__btn {
+  width: 157px;
+  height: 40px;
+  display: block;
+  margin: 32px auto;
+}
+// changeTime__title
+// <p className="changeTime__text">Selling will end</p>
+//         <div className="changeTime__body">
+//           <Input className={"changeTime__input"} placeholer={""}></Input>
+//           <Input className={"changeTime__input"} placeholer={""}></Input>
+//           <Timer date={"May 04 2023"}></Timer>
+//           <p className="changeTimer__del">x delete file</p>
 //         </div>
-//       </div>
+
+//         <button className="common-btn changeTimer__btn">Change</button>
