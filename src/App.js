@@ -12,7 +12,7 @@ function App() {
   const [modal, setModal] = useState(false);
   const [walletState, setWalletState] = useState(1);
   const [logedIn, setLogStatus] = useState(false);
-  const [artwork, setArtwork] = useState(true);
+  const [artwork, setArtwork] = useState(false);
   const [status, setStatus] = useState("Initializing...");
 
   const Wallet1 = () => {

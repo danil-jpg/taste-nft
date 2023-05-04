@@ -17,17 +17,98 @@ import authorImg6 from "../assets/img/cards/author6.png";
 import authorImg7 from "../assets/img/cards/author7.png";
 import authorImg8 from "../assets/img/cards/author8.png";
 
-const AuthorCards = () => {
+const AuthorCards = ({ editTime }) => {
+  console.log(editTime);
   return (
     <div className="authorCards-wr ">
-      <AuthorCard obj={{ authorName: "Ian X", titleImg: cardImg1, authorImg: authorImg1, authorNick: "@IanXxx", title: "WFH - art", price: "1.7m", date: "5 01 23" }}></AuthorCard>
-      <AuthorCard obj={{ authorName: "Liss", titleImg: cardImg2, authorImg: authorImg2, authorNick: "@Lissa", title: "Nxt - art", price: "1.2m", date: "7 01 23" }}></AuthorCard>
-      <AuthorCard obj={{ authorName: "InkX", titleImg: cardImg3, authorImg: authorImg3, authorNick: "@InkXXX", title: "Brm - art", price: "1.4m", date: "8 01 23" }}></AuthorCard>
-      <AuthorCard obj={{ authorName: "MarkM", titleImg: cardImg4, authorImg: authorImg4, authorNick: "@MarkMMM", title: "Kxb - art", price: "2.7m", date: "5 21 23" }}></AuthorCard>
-      <AuthorCard obj={{ authorName: "Kant", titleImg: cardImg5, authorImg: authorImg5, authorNick: "@Kant", title: "Exe - art", price: "1.8m", date: "5 31 23" }}></AuthorCard>
-      <AuthorCard obj={{ authorName: "Ronus", titleImg: cardImg6, authorImg: authorImg6, authorNick: "@Ronus", title: "Rar - art", price: "3.7m", date: "5 11 23" }}></AuthorCard>
-      <AuthorCard obj={{ authorName: "Kofe", titleImg: cardImg7, authorImg: authorImg7, authorNick: "@Ko+f", title: "Jar - art", price: "1.1m", date: "5 11 23" }}></AuthorCard>
-      <AuthorCard obj={{ authorName: "Yochek", titleImg: cardImg8, authorImg: authorImg8, authorNick: "@Yo", title: "Docx - art", price: "1.9m", date: "5 21 23" }}></AuthorCard>
+      <AuthorCard
+        setEditTime={editTime}
+        obj={{
+          authorName: "Ian X",
+          titleImg: cardImg1,
+          authorImg: authorImg1,
+          authorNick: "@IanXxx",
+          title: "WFH - art",
+          price: "1.7m",
+          date: "5 01 23",
+        }}></AuthorCard>
+      <AuthorCard
+        setEditTime={editTime}
+        obj={{
+          authorName: "Liss",
+          titleImg: cardImg2,
+          authorImg: authorImg2,
+          authorNick: "@Lissa",
+          title: "Nxt - art",
+          price: "1.2m",
+          date: "7 01 23",
+        }}></AuthorCard>
+      <AuthorCard
+        setEditTime={editTime}
+        obj={{
+          authorName: "InkX",
+          titleImg: cardImg3,
+          authorImg: authorImg3,
+          authorNick: "@InkXXX",
+          title: "Brm - art",
+          price: "1.4m",
+          date: "8 01 23",
+        }}></AuthorCard>
+      <AuthorCard
+        setEditTime={editTime}
+        obj={{
+          authorName: "MarkM",
+          titleImg: cardImg4,
+          authorImg: authorImg4,
+          authorNick: "@MarkMMM",
+          title: "Kxb - art",
+          price: "2.7m",
+          date: "5 21 23",
+        }}></AuthorCard>
+      <AuthorCard
+        setEditTime={editTime}
+        obj={{
+          authorName: "Kant",
+          titleImg: cardImg5,
+          authorImg: authorImg5,
+          authorNick: "@Kant",
+          title: "Exe - art",
+          price: "1.8m",
+          date: "5 31 23",
+        }}></AuthorCard>
+      <AuthorCard
+        setEditTime={editTime}
+        obj={{
+          authorName: "Ronus",
+          titleImg: cardImg6,
+          authorImg: authorImg6,
+          authorNick: "@Ronus",
+          title: "Rar - art",
+          price: "3.7m",
+          date: "5 11 23",
+        }}></AuthorCard>
+      <AuthorCard
+        setEditTime={editTime}
+        obj={{
+          authorName: "Kofe",
+          titleImg: cardImg7,
+          authorImg: authorImg7,
+          authorNick: "@Ko+f",
+          title: "Jar - art",
+          price: "1.1m",
+          date: "5 11 23",
+        }}></AuthorCard>
+      <AuthorCard
+        setEditTime={editTime}
+        obj={{
+          authorName: "Yochek",
+          titleImg: cardImg8,
+          authorImg: authorImg8,
+          authorNick: "@Yo",
+          title: "Docx - art",
+          price: "1.9m",
+          date: "5 21 23",
+        }}></AuthorCard>
     </div>
   );
 };

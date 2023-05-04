@@ -11,7 +11,6 @@ const CreatorPage = () => {
   const [btn, setBtn] = useState(true);
   const [edit, setEdit] = useState(false);
   const [editTime, setEditTime] = useState(false);
-
   const FollowBody = () => {
     return (
       <div className="follow__items">
@@ -149,7 +148,7 @@ const CreatorPage = () => {
           <p className="creator-cards__text">Created</p>
           <p className="creator-cards__text creator-cards__text_chosen">Collected</p>
         </div>
-        <AuthorCards></AuthorCards>
+        <AuthorCards editTime={setEditTime}></AuthorCards>
       </div>
       <ModalsTemplate
         className={"follow"}
@@ -242,7 +241,6 @@ const CreatorPage = () => {
           <Timer date={"May 04 2023"}></Timer>
           <p className="changeTimer__del">x delete file</p>
         </div>
-
         <button className="common-btn changeTimer__btn">Change</button>
       </ModalsTemplate>
     </div>
