@@ -2,6 +2,7 @@ import React from "react";
 import { IconRenderer as Icon } from "./utils/IconRenderer";
 import ProfileComp from "./UI/ProfileComp";
 import { useNavigate } from "react-router";
+import MainPageSlider from "./MainPageSlider";
 
 const AutorPreview = () => {
   const navigation = useNavigate();
@@ -13,7 +14,10 @@ const AutorPreview = () => {
         <p className="authorPr__title">WFH - art name</p>
         <p className="authorPr__descr">
           <span>Description:</span>
-          The iconic meme that became a viral Internet sensation and an indispensable part of the gachimuchi music genre. This was taken when I was very young and in my full "performance" attire. That part of me now "lives" on platforms like Twitch, YouTube, and Bilibili (B 站).
+          The iconic meme that became a viral Internet sensation and an indispensable part of the
+          gachimuchi music genre. This was taken when I was very young and in my full "performance"
+          attire. That part of me now "lives" on platforms like Twitch, YouTube, and Bilibili (B
+          站).
         </p>
         <div className="authorPr__etc-wr">
           <div className="header__user-info_sub_bal-wr ">
@@ -35,7 +39,9 @@ const AutorPreview = () => {
           </button>
         </div>
       </div>
-      <div className="authorPr__slider"></div>
+      <div className="authorPr__slider">
+        <MainPageSlider></MainPageSlider>
+      </div>
     </div>
   );
 };

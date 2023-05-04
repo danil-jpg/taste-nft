@@ -3,7 +3,7 @@ import { IconRenderer as Icon } from "./utils/IconRenderer";
 import Timer from "./Timer";
 
 const AuthorCard = (props) => {
-  const [authorized, setAuthorized] = React.useState(true);
+  console.log(props);
 
   const [modMenu, setModMenu] = React.useState(false);
 
@@ -29,8 +29,10 @@ const AuthorCard = (props) => {
         </div>
       </div>
       <div
-        className={authorized ? "card__author-wr card__author-wr-authorized" : "card__author-wr"}>
-        {authorized ? (
+        className={
+          props.logedIn ? "card__author-wr card__author-wr-authorized" : "card__author-wr"
+        }>
+        {props.logedIn ? (
           <p className="card__status-text">Approved</p>
         ) : (
           <>
@@ -42,7 +44,7 @@ const AuthorCard = (props) => {
           </>
         )}
       </div>
-      {authorized ? (
+      {props.logedIn ? (
         <div className="card__mod-menu-wr">
           <div
             className={

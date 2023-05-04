@@ -6,7 +6,7 @@ import ModalsTemplate from "../UI/modals/ModalsTemplate";
 import Input from "../UI/Input";
 import Timer from "../Timer";
 
-const CreatorPage = () => {
+const CreatorPage = ({ logedIn, setLogedIn }) => {
   const [followForm, setFollowForm] = useState(false);
   const [btn, setBtn] = useState(true);
   const [edit, setEdit] = useState(false);
@@ -148,7 +148,7 @@ const CreatorPage = () => {
           <p className="creator-cards__text">Created</p>
           <p className="creator-cards__text creator-cards__text_chosen">Collected</p>
         </div>
-        <AuthorCards editTime={setEditTime}></AuthorCards>
+        <AuthorCards editTime={setEditTime} logedIn={logedIn} setLogedIn={setLogedIn}></AuthorCards>
       </div>
       <ModalsTemplate
         className={"follow"}

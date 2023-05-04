@@ -137,7 +137,11 @@ function App() {
         <Routes>
           <Route index element={<Main></Main>}></Route>
           <Route path="artwork" element={<ArtworkPage></ArtworkPage>}></Route>
-          <Route path="creator" element={<CreatorPage></CreatorPage>}></Route>
+          <Route
+            path="creator"
+            element={
+              <CreatorPage logedIn={logedIn} setLogStatus={setLogStatus}></CreatorPage>
+            }></Route>
         </Routes>
       </BrowserRouter>
     </div>

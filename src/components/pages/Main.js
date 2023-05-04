@@ -42,16 +42,34 @@ const Main = () => {
     <div className="MainPage">
       <AuthorPreview></AuthorPreview>
       <div className="main-page__author-block container">
-        <Selects style={{ width: "170px" }} className="select1" options={["WFH - art name1", "WFH - art name2", "WFH - art name3"]} defOpt="Recently added"></Selects>
-        <Selects style={{ width: " 121px" }} className="select2" options={["WFH - art name1", "WFH - art name2", "WFH - art name3"]} defOpt="Auctions"></Selects>
+        <Selects
+          style={{ width: "170px" }}
+          className="select1"
+          options={["WFH - art name1", "WFH - art name2", "WFH - art name3"]}
+          defOpt="Recently added"></Selects>
+        <Selects
+          style={{ width: " 121px" }}
+          className="select2"
+          options={["WFH - art name1", "WFH - art name2", "WFH - art name3"]}
+          defOpt="Auctions"></Selects>
         <AuthorCards></AuthorCards>
       </div>
       <div className="main-page__author-slider container">
         <h2 className="author-slider__title">Featured creators</h2>
-        <swiper-container init="false" ref={authorSwiper} slides-per-view="5" space-between="16" pagination-type="progressbar" class="author-swiper">
+        <swiper-container
+          init="false"
+          ref={authorSwiper}
+          slides-per-view="5"
+          space-between="16"
+          pagination-type="progressbar"
+          class="author-swiper">
           <swiper-slide>
             <div className="author-slider-wr">
-              <img className="author-slider_img" src={require("../../assets/img/avatar-big.png")} alt="img" />
+              <img
+                className="author-slider_img"
+                src={require("../../assets/img/avatar-big.png")}
+                alt="img"
+              />
               <p className="author-slider_name">User Name</p>
               <p className="author-slider_nick rainbow-text">@username</p>
               <p className="author-slider_etc">24 sales on 32ETH</p>
@@ -59,7 +77,11 @@ const Main = () => {
           </swiper-slide>
           <swiper-slide>
             <div className="author-slider-wr">
-              <img className="author-slider_img" src={require("../../assets/img/avatar-big.png")} alt="img" />
+              <img
+                className="author-slider_img"
+                src={require("../../assets/img/avatar-big.png")}
+                alt="img"
+              />
               <p className="author-slider_name">User Name</p>
               <p className="author-slider_nick rainbow-text">@username</p>
               <p className="author-slider_etc">24 sales on 32ETH</p>
@@ -67,7 +89,11 @@ const Main = () => {
           </swiper-slide>
           <swiper-slide>
             <div className="author-slider-wr">
-              <img className="author-slider_img" src={require("../../assets/img/avatar-big.png")} alt="img" />
+              <img
+                className="author-slider_img"
+                src={require("../../assets/img/avatar-big.png")}
+                alt="img"
+              />
               <p className="author-slider_name">User Name</p>
               <p className="author-slider_nick rainbow-text">@username</p>
               <p className="author-slider_etc">24 sales on 32ETH</p>
@@ -75,7 +101,11 @@ const Main = () => {
           </swiper-slide>
           <swiper-slide>
             <div className="author-slider-wr">
-              <img className="author-slider_img" src={require("../../assets/img/avatar-big.png")} alt="img" />
+              <img
+                className="author-slider_img"
+                src={require("../../assets/img/avatar-big.png")}
+                alt="img"
+              />
               <p className="author-slider_name">User Name</p>
               <p className="author-slider_nick rainbow-text">@username</p>
               <p className="author-slider_etc">24 sales on 32ETH</p>
@@ -83,7 +113,11 @@ const Main = () => {
           </swiper-slide>
           <swiper-slide>
             <div className="author-slider-wr">
-              <img className="author-slider_img" src={require("../../assets/img/avatar-big.png")} alt="img" />
+              <img
+                className="author-slider_img"
+                src={require("../../assets/img/avatar-big.png")}
+                alt="img"
+              />
               <p className="author-slider_name">User Name</p>
               <p className="author-slider_nick rainbow-text">@username</p>
               <p className="author-slider_etc">24 sales on 32ETH</p>
@@ -91,7 +125,11 @@ const Main = () => {
           </swiper-slide>
           <swiper-slide>
             <div className="author-slider-wr">
-              <img className="author-slider_img" src={require("../../assets/img/avatar-big.png")} alt="img" />
+              <img
+                className="author-slider_img"
+                src={require("../../assets/img/avatar-big.png")}
+                alt="img"
+              />
               <p className="author-slider_name">User Name</p>
               <p className="author-slider_nick rainbow-text">@username</p>
               <p className="author-slider_etc">24 sales on 32ETH</p>
@@ -99,7 +137,11 @@ const Main = () => {
           </swiper-slide>
           <swiper-slide>
             <div className="author-slider-wr">
-              <img className="author-slider_img" src={require("../../assets/img/avatar-big.png")} alt="img" />
+              <img
+                className="author-slider_img"
+                src={require("../../assets/img/avatar-big.png")}
+                alt="img"
+              />
               <p className="author-slider_name">User Name</p>
               <p className="author-slider_nick rainbow-text">@username</p>
               <p className="author-slider_etc">24 sales on 32ETH</p>
@@ -107,7 +149,11 @@ const Main = () => {
           </swiper-slide>
           <swiper-slide>
             <div className="author-slider-wr">
-              <img className="author-slider_img" src={require("../../assets/img/avatar-big.png")} alt="img" />
+              <img
+                className="author-slider_img"
+                src={require("../../assets/img/avatar-big.png")}
+                alt="img"
+              />
               <p className="author-slider_name">User Name</p>
               <p className="author-slider_nick rainbow-text">@username</p>
               <p className="author-slider_etc">24 sales on 32ETH</p>
@@ -115,7 +161,11 @@ const Main = () => {
           </swiper-slide>
           <swiper-slide>
             <div className="author-slider-wr">
-              <img className="author-slider_img" src={require("../../assets/img/avatar-big.png")} alt="img" />
+              <img
+                className="author-slider_img"
+                src={require("../../assets/img/avatar-big.png")}
+                alt="img"
+              />
               <p className="author-slider_name">User Name</p>
               <p className="author-slider_nick rainbow-text">@username</p>
               <p className="author-slider_etc">24 sales on 32ETH</p>
@@ -123,7 +173,11 @@ const Main = () => {
           </swiper-slide>
           <swiper-slide>
             <div className="author-slider-wr">
-              <img className="author-slider_img" src={require("../../assets/img/avatar-big.png")} alt="img" />
+              <img
+                className="author-slider_img"
+                src={require("../../assets/img/avatar-big.png")}
+                alt="img"
+              />
               <p className="author-slider_name">User Name</p>
               <p className="author-slider_nick rainbow-text">@username</p>
               <p className="author-slider_etc">24 sales on 32ETH</p>

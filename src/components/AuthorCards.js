@@ -17,11 +17,13 @@ import authorImg6 from "../assets/img/cards/author6.png";
 import authorImg7 from "../assets/img/cards/author7.png";
 import authorImg8 from "../assets/img/cards/author8.png";
 
-const AuthorCards = ({ editTime }) => {
+const AuthorCards = ({ editTime, logedIn, setLogedIn }) => {
   console.log(editTime);
   return (
     <div className="authorCards-wr ">
       <AuthorCard
+        logedIn={logedIn}
+        setLogedIn={logedIn}
         setEditTime={editTime}
         obj={{
           authorName: "Ian X",
@@ -33,6 +35,8 @@ const AuthorCards = ({ editTime }) => {
           date: "5 01 23",
         }}></AuthorCard>
       <AuthorCard
+        logedIn={logedIn}
+        setLogedIn={logedIn}
         setEditTime={editTime}
         obj={{
           authorName: "Liss",
@@ -44,6 +48,8 @@ const AuthorCards = ({ editTime }) => {
           date: "7 01 23",
         }}></AuthorCard>
       <AuthorCard
+        logedIn={logedIn}
+        setLogedIn={logedIn}
         setEditTime={editTime}
         obj={{
           authorName: "InkX",
@@ -55,6 +61,8 @@ const AuthorCards = ({ editTime }) => {
           date: "8 01 23",
         }}></AuthorCard>
       <AuthorCard
+        logedIn={logedIn}
+        setLogedIn={logedIn}
         setEditTime={editTime}
         obj={{
           authorName: "MarkM",
@@ -66,6 +74,8 @@ const AuthorCards = ({ editTime }) => {
           date: "5 21 23",
         }}></AuthorCard>
       <AuthorCard
+        logedIn={logedIn}
+        setLogedIn={logedIn}
         setEditTime={editTime}
         obj={{
           authorName: "Kant",
@@ -77,6 +87,8 @@ const AuthorCards = ({ editTime }) => {
           date: "5 31 23",
         }}></AuthorCard>
       <AuthorCard
+        logedIn={logedIn}
+        setLogedIn={logedIn}
         setEditTime={editTime}
         obj={{
           authorName: "Ronus",
@@ -88,6 +100,8 @@ const AuthorCards = ({ editTime }) => {
           date: "5 11 23",
         }}></AuthorCard>
       <AuthorCard
+        logedIn={logedIn}
+        setLogedIn={logedIn}
         setEditTime={editTime}
         obj={{
           authorName: "Kofe",
@@ -99,6 +113,8 @@ const AuthorCards = ({ editTime }) => {
           date: "5 11 23",
         }}></AuthorCard>
       <AuthorCard
+        logedIn={logedIn}
+        setLogedIn={logedIn}
         setEditTime={editTime}
         obj={{
           authorName: "Yochek",
