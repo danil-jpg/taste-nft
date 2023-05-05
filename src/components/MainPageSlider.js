@@ -54,19 +54,16 @@ const MainPageSlider = () => {
 
       class="main-swiper">
       <swiper-slide>
-        <img className="" src={require("../assets/img/main.png")} alt="img" />
+        <img className="" src={require("../assets/img/mainPage/img1.jpg")} alt="img" />
       </swiper-slide>
       <swiper-slide>
-        <img className="" src={require("../assets/img/main.png")} alt="img" />
+        <img className="" src={require("../assets/img/mainPage/img2.jpg")} alt="img" />
       </swiper-slide>
       <swiper-slide>
-        <img className="" src={require("../assets/img/main.png")} alt="img" />
+        <img className="" src={require("../assets/img/mainPage/img3.jpg")} alt="img" />
       </swiper-slide>
       <swiper-slide>
-        <img className="" src={require("../assets/img/main.png")} alt="img" />
-      </swiper-slide>
-      <swiper-slide>
-        <img className="" src={require("../assets/img/main.png")} alt="img" />
+        <img className="" src={require("../assets/img/mainPage/img4.jpg")} alt="img" />
       </swiper-slide>
     </swiper-container>
   );

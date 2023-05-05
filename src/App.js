@@ -13,6 +13,7 @@ function App() {
   const [walletState, setWalletState] = useState(1);
   const [logedIn, setLogStatus] = useState(false);
   const [artwork, setArtwork] = useState(false);
+  const [artworkStep, setArtworkStep] = useState(1);
   const [status, setStatus] = useState("Initializing...");
 
   const Wallet1 = () => {
@@ -80,7 +81,9 @@ function App() {
       <div className="step1">
         <p className="step__title">Upload the artwork you will be selling</p>
         <div className="step__drop"></div>
-        <button className="common-btn step__btn">Next step</button>
+        <button className="common-btn step__btn" onClick={() => setArtworkStep(2)}>
+          Next step
+        </button>
       </div>
     );
   };
@@ -99,11 +102,22 @@ function App() {
           <IconRenderer id={"del"} className={"del"}></IconRenderer>
           <IconRenderer id={"drop"} className={"drop"}></IconRenderer>
         </div>
-        <button className="common-btn step__btn">Next step</button>
+        <button className="common-btn step__btn" onClick={() => alert("Оно сломалось,опять")}>
+          Next step
+        </button>
       </div>
     );
   };
 
+  const Steps = () => {
+    if (artworkStep === 1) {
+      return Step1();
+    } else if (artworkStep === 2) {
+      return Step2();
+    } else if (artworkStep === 3) {
+      // return Step3()
+    }
+  };
   return (
     <div id="app">
       <BrowserRouter>
@@ -126,12 +140,10 @@ function App() {
               <div className="art__progress"></div>
             </div>
 
-            <p className="art__progress_text">Step {1} from 3</p>
+            <p className="art__progress_text">Step {artworkStep} from 3</p>
           </div>
-
-          <div className="art__body">
-            <Step2></Step2>
-          </div>
+          {Steps()}
+          <div className="art__body"></div>
         </ModalsTemplate>
         <Header callback={setModal} logedIn={logedIn} setArt={setArtwork}></Header>
         <Routes>

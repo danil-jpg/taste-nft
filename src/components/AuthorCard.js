@@ -3,8 +3,6 @@ import { IconRenderer as Icon } from "./utils/IconRenderer";
 import Timer from "./Timer";
 
 const AuthorCard = (props) => {
-  console.log(props);
-
   const [modMenu, setModMenu] = React.useState(false);
 
   return (
