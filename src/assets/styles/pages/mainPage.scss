@@ -12,10 +12,17 @@
   min-width: 0;
 }
 .swiper-cards {
-  overflow: hidden;
+  overflow-x: clip;
 }
 
 .authorPr__slider {
   margin-top: 40px;
   padding-left: 5px;
 }
+
+// <div className="step3">
+// <p className="step3__text step3__top-text">Artwork name</p>
+// <input type="text" className="ste3__input1" />
+// <p className="step3__text step3__center-text">Description</p>
+// <textarea type="text" className="ste3__input2" />
+// </div>

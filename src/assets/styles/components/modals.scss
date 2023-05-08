@@ -579,6 +579,49 @@
   border-radius: 16px;
   margin-top: 13px;
   box-sizing: border-box;
+  position: relative;
+  button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+  }
+
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    opacity: 0;
+  }
+
+  .span1 {
+    width: 294px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    display: block;
+    margin: 0 auto;
+    width: 112px;
+  }
+  .span2 {
+    width: 348px;
+    height: 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
 }
 
 .step__btn {
@@ -607,17 +650,147 @@
   height: 20px;
 }
 
-// <div className="step2">
-//         <p className="step__title">
-//           Censor the public version of artwork, if it contains 18+ content
-//         </p>
-//         <div className="step__edit">
-//           <img src={require("./assets/img/modals/Rectangle 39322.png")} alt="img" />
-//         </div>
-//         <div className="step__filters">
-//           <IconRenderer id={"picture"} className={"picture"}></IconRenderer>
-//           <IconRenderer id={"del"} className={"del"}></IconRenderer>
-//           <IconRenderer id={"drop"} className={"drop"}></IconRenderer>
-//         </div>
-//         <button className="common-btn step__btn">Next step</button>
-//       </div>
+.form-control {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.1;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+}
+
+.step3__input-radio {
+  appearance: none;
+  background-color: var(--form-background);
+  margin: 0;
+  color: #8743ff;
+  border: 0.15em solid currentColor;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: grid;
+  place-content: center;
+}
+
+.step3__input-radio::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  background: linear-gradient(270deg, #8743ff 0%, #d8c2ff 100%);
+}
+
+.step3__input-radio:checked::before {
+  transform: scale(1);
+}
+
+.step3__input-radio:focus {
+  // outline: max(2px, 0.15em) solid currentColor;
+  // outline-offset: max(2px, 0.15em);
+}
+
+.step3 {
+  margin-top: 22px;
+
+  .bid__min-sum {
+    margin-right: 43px;
+    display: inline-block;
+  }
+  .bid {
+    display: grid;
+    grid-template-columns: 16% 1fr;
+  }
+  .bid__btn {
+    grid-column: 1/3;
+    margin-top: 31px;
+    margin-bottom: 28px;
+  }
+}
+.unn {
+  grid-column: 1/3;
+}
+
+.step3__text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.step3__input1 {
+  margin-top: 9px;
+  margin-bottom: 23px;
+}
+.step3__input {
+  width: 100%;
+  height: 40px;
+  background: #1d2228;
+  border: none;
+  border-radius: 8px;
+}
+.step3__input2 {
+  margin-top: 9px;
+  height: 120px;
+}
+.step3__radio {
+  margin-top: 12px;
+  display: flex;
+  label {
+    display: flex;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  input {
+    margin-right: 7px;
+  }
+}
+.step3__choose {
+  margin-top: 17px;
+  .step3__bottom-text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+.yazaebalsa {
+  margin-left: 16px;
+}
+
+.inc-wr {
+  display: flex;
+  justify-content: space-between;
+  width: 64px;
+  align-items: center;
+  margin-top: 4px;
+}
+.plus {
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 40px;
+  line-height: 47px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.num {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+.minus {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+// <div className="inc-wr">
+// <p className="plus">+</p>
+// <p className="num">1</p>
+// <p className="minus">-</p>
+// </div>

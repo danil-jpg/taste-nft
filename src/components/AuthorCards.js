@@ -18,7 +18,6 @@ import authorImg7 from "../assets/img/cards/author7.png";
 import authorImg8 from "../assets/img/cards/author8.png";
 
 const AuthorCards = ({ editTime, logedIn, setLogedIn }) => {
-  console.log(editTime);
   return (
     <div className="authorCards-wr ">
       <AuthorCard

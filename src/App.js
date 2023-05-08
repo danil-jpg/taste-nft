@@ -15,6 +15,7 @@ function App() {
   const [artwork, setArtwork] = useState(false);
   const [artworkStep, setArtworkStep] = useState(1);
   const [status, setStatus] = useState("Initializing...");
+  const [input, setInput] = useState("");
 
   const Wallet1 = () => {
     return (
@@ -80,7 +81,13 @@ function App() {
     return (
       <div className="step1">
         <p className="step__title">Upload the artwork you will be selling</p>
-        <div className="step__drop"></div>
+        <div className="step__drop" style={{}}>
+          <button>
+            <span className="span1">1500x500px. JPG, PNG or GIF. 100MB max size.</span>
+            <span className="span2">Drag and drop an image here, or click to browse</span>
+          </button>
+          <input type="file" />
+        </div>
         <button className="common-btn step__btn" onClick={() => setArtworkStep(2)}>
           Next step
         </button>
@@ -102,20 +109,70 @@ function App() {
           <IconRenderer id={"del"} className={"del"}></IconRenderer>
           <IconRenderer id={"drop"} className={"drop"}></IconRenderer>
         </div>
-        <button className="common-btn step__btn" onClick={() => alert("Оно сломалось,опять")}>
+        <button className="common-btn step__btn" onClick={() => setArtworkStep(3)}>
           Next step
         </button>
       </div>
     );
   };
 
+  const Step3 = () => {
+    return (
+      <div className="step3">
+        <p className="step3__text step3__top-text">Artwork name</p>
+        <input type="text" className="step3__input1 step3__input" />
+        <p className="step3__text step3__center-text">Description</p>
+        <textarea type="text" className="step3__input2 step3__input" />
+        <div className="step3__choose">
+          <p className="step3__bottom-text">Type</p>
+          <div className="step3__radio">
+            <label className="">
+              <input type="radio" name="radio" className="step3__input-radio" />
+              Auction
+            </label>
+            <label className="yazaebalsa">
+              <input type="radio" name="radio" className="step3__input-radio" />
+              Sale
+            </label>
+          </div>
+          <div className="bid">
+            <div className="unn">
+              <p className="bid__min-sum">Copies</p>
+              <p className="bid__min-sum">Sum</p>
+            </div>
+
+            <div className="inc-wr">
+              <p className="minus">-</p>
+              <p className="num">1</p>
+              <p className="plus">+</p>
+            </div>
+            <div className="bid__input-wr">
+              <div className="bid__center-wr">
+                <div className="bid__input-container">
+                  <input
+                    value={input}
+                    onChange={(e) => setInput(e.target.value)}
+                    type="text"
+                    className="bid__input"
+                    placeholder="10000000"
+                  />
+                </div>
+                <p className="bid__input-price">({input * 2}$)</p>
+              </div>
+            </div>
+            <button className="common-btn bid__btn">Finish creating</button>
+          </div>
+        </div>
+      </div>
+    );
+  };
   const Steps = () => {
     if (artworkStep === 1) {
       return Step1();
     } else if (artworkStep === 2) {
       return Step2();
     } else if (artworkStep === 3) {
-      // return Step3()
+      return Step3();
     }
   };
   return (

@@ -9,7 +9,7 @@ import Timer from "../Timer";
 const CreatorPage = ({ logedIn, setLogedIn }) => {
   const [followForm, setFollowForm] = useState(false);
   const [btn, setBtn] = useState(true);
-  const [edit, setEdit] = useState(false);
+  const [edit, setEdit] = useState(true);
   const [editTime, setEditTime] = useState(false);
   const FollowBody = () => {
     return (
